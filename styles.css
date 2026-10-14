@@ -1,0 +1,45 @@
+*{ 
+    border: 2px solid red; 
+    margin: 0; 
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: 1fr 2fr;
+    gap: 4px; 
+}
+
+.container div{
+    padding: 15px;
+    font-size: 32px; 
+    font-weight: bold; 
+    color: white;
+}
+
+.sidebar{
+    background: #1992D4; 
+    display: grid; 
+    grid-row: 1/9; 
+    gap: 50px;
+}
+
+.header{
+    background: white; 
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+button{
+    background: #1992D4; 
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.projects{
+    background: #E2E8F0; 
+}
