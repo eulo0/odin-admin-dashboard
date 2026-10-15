@@ -3,12 +3,7 @@
     padding: 0;
 }
 
-ul{
-    gap: 20px;
-}
-
 .container{
-    text-align: center;
     display: grid; 
     grid-template-columns: 350px 1500px; 
     grid-template-rows: 220px 700px;
@@ -56,20 +51,30 @@ ul{
 
 .header .top-row{
     grid-row: 1;
+    grid-column: 2;
     border: 2px solid red;
+    display: flex;
+    align-content: center;
 }
 
 .header .bottom-row{
     grid-row: 2;
+    grid-column:2;
     border: 2px solid red;
+    display: flex;
+    align-content: center;
+    gap: 14px;
 }
 
 button{
     background: #1992D4; 
     color: white;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 18px;
-    padding: 15px;
+    padding: 10px;
+    height: 40px; 
+    width: 100px;
+    border: none;
 }
 
 input{
@@ -77,9 +82,17 @@ input{
     width:700px;
     background: #E2E8F0; 
     border-radius: 14px;
+    border: none;
+    padding: 4px;
 }
 
 .projects{
     grid-row: 2;
     background: #E2E8F0; 
+}
+
+.profile-text{
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
 }
