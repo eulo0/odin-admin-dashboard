@@ -26,6 +26,17 @@
     gap: 50px;
 }
 
+.sidebar li{
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar img{
+    height: 10%;
+    width: 10%;
+}
+
 .header{
     background: white; 
     display: grid; 
