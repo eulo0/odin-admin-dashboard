@@ -118,7 +118,7 @@ input{
 .cards{
     display: flex; 
     flex-wrap: wrap;
-    align-content: flex-sart;
+    align-content: flex-start;
     gap: 30px;
     margin-top: 15px;
 }
@@ -215,7 +215,6 @@ input{
 
 .profile-board{
     display: flex; 
-    justify-content: center;
     align-items: center;
     margin-top: 15px;
     height: 240px; 
@@ -223,9 +222,38 @@ input{
     background: white;
     border-radius: 8px;
     box-shadow: 0 6px 2px -2px lightgray;
+    flex-direction: column;
 }
 
 .profile-inner-board{
+    display: grid;
     width: 240px; 
-    height: 220px;
+    height: 60px;
+    grid-template-columns: 10px 80px 120px 180px;
+    grid-template-rows: 10px 15px 10px;
+}
+
+.profile-inner-board img{
+    grid-column: 1;
+    height: 55px;
+    width: 55px;
+}
+
+.profile-name{
+    grid-column: 3/4;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-name .account{
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+}
+
+.profile-name .subtitle{
+    font-size: 12px; 
+    color: darkgray;
 }
