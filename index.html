@@ -9,9 +9,10 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <ul>
-                <li><img src="icons/view-dashboard.svg">Dashboard</li>
-            </ul>
+                <div class="logo-area">
+                    <img src="icons/View-dashboard.svg">
+                    <p> Hello </p>
+                </div>
             <ul>
                 <li><img src="icons/home.svg">Home</li>
                 <li><img src="icons/card-account-details-outline.svg">Profile</li>
@@ -29,20 +30,26 @@
 
         <div class="header">
             <div class="top-row">
-                <img src="icons/magnify.svg">
+                <img src="icons/magnify.svg" class="search-icon">
                 <input type="text">
-                <img src="icons/bell-ring-outline.svg">
-                <img src="icons/face-woman-profile.svg">
-                <p class="profile-text">Morgan Oakley</p>
+                <div class="right-icons">
+                    <img src="icons/bell-ring-outline.svg" class="bell-icon">
+                    <img src="icons/face-woman-profile.svg" class="profile-icon">
+                    <p class="profile-text">Morgan Oakley</p>
+                </div>
             </div>
         
             <div class="bottom-row">
-                <img src="icons/face-woman-profile.svg">
-                <p class="profile-text">Hi there,</p>
-                <p class="profile-text">Morgan Oakley</p>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <img src="icons/face-woman-profile.svg" class="profile-icon2">
+                <div class="welcome-box">
+                    <p class="welcome-text">Hi there,</p>
+                    <p class="profile-text">Morgan Oakley (@morgan)</p>
+                </div>
+                <div class="button-group">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
 
