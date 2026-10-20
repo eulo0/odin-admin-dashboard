@@ -1,12 +1,17 @@
 *{ 
     margin: 0; 
     padding: 0;
+    /* border: 2px solid red; */
 }
 
 .container{
     display: grid; 
     grid-template-columns: 1fr 4fr; 
     grid-template-rows: 1fr 5fr;
+}
+
+button:hover{
+    background: #3CBAD4;
 }
 
 .container div{
@@ -16,18 +21,18 @@
 }
 
 .sidebar{
-    padding:15px;
+    padding:1rem;
     background: #1992D4; 
     display: grid; 
     grid-row: 1/3; 
-    gap: 50px;
+    gap: 4rem;
     align-content:start;
 }
 
 .sidebar li, .logo-area{
     display: flex; 
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .sidebar img{
@@ -36,21 +41,28 @@
 }
 
 .logo-area{
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    margin-left: -1rem;
+    gap: 0.2rem;
+}
+
+.logo-area p{
+    font-size: 2rem;
 }
 
 .logo-area img{
-    height: 50%;
-    width: 50%;
+    height: 6rem;
+    width: 6rem;
 }
 
 .header{
-    padding:15px;
+    padding:1rem;
     grid-column: 2;
     grid-row: 1;
     background: white; 
     display: grid; 
-    grid-template-columns: 5px 1fr 5px;
+    grid-template-columns: 0.5px 1fr 5px;
     grid-template-rows: auto auto;
 }
 
@@ -145,7 +157,7 @@ input{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1.5fr 1fr;
-    box-shadow: 0 -6px 6px -2px lightgray;
+    box-shadow: 0 -6px 6px 0px lightgray;
 }
 
 .projects .titleb{
